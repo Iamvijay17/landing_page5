@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap Style  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <style>
+      /* Font Import  */
+      @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap");
+
+      .card-img-top {
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+      }
+
+      .carTitle {
+        font-family: "Kanit", sans-serif;
+      }
+
+      .active {
+        color: #fc78b1 !important;
+      }
+
+      .card-img-top {
+        transition: 1s ease;
+      }
+
+      /* Card hover effect */
+      .card-img-top:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://picsxtra.com/images/2023/12/05/Logo.png"
+            alt="Logo.png"
+            border="0"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Review</a>
+            </li>
+          </ul>
+          <ul class="d-flex navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#"> <svg class="me-3" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>Login</a>
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Bootstrap carousel  -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <!-- First carousel Image -->
+        <div class="carousel-item active" data-bs-interval="2000">
+          <div
+            class="container text-center position-absolute h-100 d-flex align-items-center justify-content-center flex-column"
+          >
+            <p
+              class="text-white fw-semibold carTitle"
+              style="font-size: 70px; line-height: 1"
+            >
+              Your Cozy Era
+            </p>
+            <p class="text-black-50 fs-3">
+              <b>Get peak comfy</b>-chic with new winter essentials.
+            </p>
+            <a
+              class="btn btn-lg rounded-pill shadow fw-bold"
+              style="background: #ffffff"
+              href="#"
+              role="button"
+              >SHOP NOW</a
+            >
+          </div>
+          <img
+            src="https://picsxtra.com/images/2023/12/05/excited-girl-scream-joy-making-fist-pump-holding-shopping-bag-rejoicing-standing-dress-ove.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <!-- secound carousel Image -->
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <div
+            class="container text-center position-absolute h-100 d-flex align-items-center justify-content-center flex-column"
+          >
+            <p
+              class="text-white fw-semibold carTitle"
+              style="font-size: 70px; line-height: 1"
+            >
+              Everlane On You
+            </p>
+            <p class="text-black-50 fs-3">
+              <b>Share</b> your latest look with EverlaneOn <b>You</b>
+            </p>
+            <a
+              class="btn btn-lg rounded-pill shadow fw-bold"
+              style="background: #ffffff"
+              href="#"
+              role="button"
+              >SHOP NOW</a
+            >
+          </div>
+          <img
+            src="https://picsxtra.com/images/2023/12/05/excited-girl-open-up-shopping-bags-gasping-amazed-checking-out-gifts-her-with-happy-face-sta.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <!-- Third carousel Image -->
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <div
+            class="container text-center position-absolute h-100 d-flex align-items-center justify-content-center flex-column"
+          >
+            <p
+              class="text-white w-50 fw-semibold carTitle"
+              style="font-size: 70px; line-height: 1"
+            >
+              We believe we can all make a difference.
+            </p>
+            <p class="text-black-50 fs-3">
+              <b>Our way:</b> <br />
+              Exceptional quality. <br />
+              Ethical factories. <br />
+              Radical Transparency.
+            </p>
+            <div>
+              <a
+                class="btn btn-lg rounded-pill shadow fw-bold"
+                style="background: #ffffff"
+                href="#"
+                role="button"
+                >About Us</a
+              >
+              <a
+                class="btn btn-lg rounded-pill shadow fw-bold btn-outline-dark ms-5"
+                href="#"
+                role="button"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <img
+            src="https://picsxtra.com/images/2023/12/05/young-happy-woman-shopper-showing-okay-sign-pleased-with-good-discounts-buying-staff-sale-holding.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Cards  -->
+    <div class="container text-center mt-5">
+      <div class="row g-5">
+        <div class="col">
+          <div class="card shadow border-0" style="width: 18rem">
+            <img
+              src="https://contents.mediadecathlon.com/p2567818/1bd67d8d7fa0df309cb519b38f2bd353/p2567818.jpg?format=auto&quality=70&f=650x0"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Men's Cotton Gym T-Shirt Regular Fit</h5>
+              <p class="card-text text-start text-secondary">
+                <b>Made for :</b>
+                This T-shirt is the perfect basic. It's a simple and easy basic.
+              </p>
+              <a href="#" class="btn btn-outline-info text-info me-3"
+                >Add to Card</a
+              >
+              <a href="#" class="btn btn-warning fw-semibold">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow border-0" style="width: 18rem">
+            <img
+              src="https://contents.mediadecathlon.com/p2450387/34ba4b927825e1fcdfa4bec2b5cfd4ab/p2450387.jpg?format=auto&quality=70&f=650x0"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Men's Cotton Gym T-Shirt Regular Fit</h5>
+              <p class="card-text text-start text-secondary">
+                <b>Made for :</b>
+                This T-shirt is the perfect basic. It's a simple and easy basic.
+              </p>
+              <a href="#" class="btn btn-outline-info text-info me-3"
+                >Add to Card</a
+              >
+              <a href="#" class="btn btn-warning fw-semibold">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow border-0" style="width: 18rem">
+            <img
+              src="https://contents.mediadecathlon.com/p2594986/37d2c01269e718e669c6731a45eed227/p2594986.jpg?format=auto&quality=70&f=650x0"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Men's Cotton Gym T-Shirt Regular Fit</h5>
+              <p class="card-text text-start text-secondary">
+                <b>Made for :</b>
+                This T-shirt is the perfect basic. It's a simple and easy basic.
+              </p>
+              <a href="#" class="btn btn-outline-info text-info me-3"
+                >Add to Card</a
+              >
+              <a href="#" class="btn btn-warning fw-semibold">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow border-0" style="width: 18rem">
+            <img
+              src="https://contents.mediadecathlon.com/p2043080/d9af252c6ce80654406bd908b455720b/p2043080.jpg?format=auto&quality=70&f=650x0"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Men Running T-shirt Run Dry - Prussian Blue
+              </h5>
+              <p class="card-text text-start text-secondary">
+                <b>Made for :</b>
+                Men's breathable running T-shirt keeps you dry when running in
+                hot weather.
+              </p>
+              <a href="#" class="btn btn-outline-info text-info me-3"
+                >Add to Card</a
+              >
+              <a href="#" class="btn btn-warning fw-semibold">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow border-0" style="width: 18rem">
+            <img
+              src="https://contents.mediadecathlon.com/p2595007/9044e898435697e6d511d04e2143c43f/p2595007.jpg?format=auto&quality=70&f=650x0"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Men's Cotton Gym T-Shirt Regular Fit</h5>
+              <p class="card-text text-start text-secondary">
+                <b>Made for :</b>
+                This T-shirt is the perfect basic. It's a simple and easy basic.
+              </p>
+              <a href="#" class="btn btn-outline-info text-info me-3"
+                >Add to Card</a
+              >
+              <a href="#" class="btn btn-warning fw-semibold">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow border-0" style="width: 18rem">
+            <img
+              src="https://contents.mediadecathlon.com/p2567818/1bd67d8d7fa0df309cb519b38f2bd353/p2567818.jpg?format=auto&quality=70&f=650x0"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Men's Cotton Gym T-Shirt Regular Fit</h5>
+              <p class="card-text text-start text-secondary">
+                <b>Made for :</b>
+                This T-shirt is the perfect basic. It's a simple and easy basic.
+              </p>
+              <a href="#" class="btn btn-outline-info text-info me-3"
+                >Add to Card</a
+              >
+              <a href="#" class="btn btn-warning fw-semibold">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow border-0" style="width: 18rem">
+            <img
+              src="https://contents.mediadecathlon.com/p2450387/34ba4b927825e1fcdfa4bec2b5cfd4ab/p2450387.jpg?format=auto&quality=70&f=650x0"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Men's Cotton Gym T-Shirt Regular Fit</h5>
+              <p class="card-text text-start text-secondary">
+                <b>Made for :</b>
+                This T-shirt is the perfect basic. It's a simple and easy basic.
+              </p>
+              <a href="#" class="btn btn-outline-info text-info me-3"
+                >Add to Card</a
+              >
+              <a href="#" class="btn btn-warning fw-semibold">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow border-0" style="width: 18rem">
+            <img
+              src="https://contents.mediadecathlon.com/p2594986/37d2c01269e718e669c6731a45eed227/p2594986.jpg?format=auto&quality=70&f=650x0"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Men's Cotton Gym T-Shirt Regular Fit</h5>
+              <p class="card-text text-start text-secondary">
+                <b>Made for :</b>
+                This T-shirt is the perfect basic. It's a simple and easy basic.
+              </p>
+              <a href="#" class="btn btn-outline-info text-info me-3"
+                >Add to Card</a
+              >
+              <a href="#" class="btn btn-warning fw-semibold">Buy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow border-0" style="width: 18rem">
+            <img
+              src="https://contents.mediadecathlon.com/p2043080/d9af252c6ce80654406bd908b455720b/p2043080.jpg?format=auto&quality=70&f=650x0"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Men Running T-shirt Run Dry - Prussian Blue
+              </h5>
+              <p class="card-text text-start text-secondary">
+                <b>Made for :</b>
+                Men's breathable running T-shirt keeps you dry when running in
+                hot weather.
+              </p>
+              <a href="#" class="btn btn-outline-info text-info me-3"
+                >Add to Card</a
+              >
+              <a href="#" class="btn btn-warning fw-semibold">Buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="p-5 mt-5" style="background: #dddbdc4d">
+      <div class="container text-start">
+        <div class="row">
+          <!-- Footer Col 1 -->
+          <div class="col">
+            <div class="row">
+              <div class="col text-center fw-semibold">Account</div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>Log In</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small> Sign Up</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>Redeem a Gift Card</small>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Col 2 -->
+          <div class="col text-start">
+            <div class="row">
+              <div class="col text-center fw-semibold">Company</div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>About</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>Factories</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>DEI</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>Careers</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>International</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>Accessibility</small>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Col 3 -->
+          <div class="col text-start">
+            <div class="row">
+              <div class="col text-center fw-semibold">Get Help</div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>Help Center</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>Return Policy</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small> Shipping Info</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>Bulk Orders</small>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Col 4 -->
+          <div class="col text-start">
+            <div class="row">
+              <div class="col text-center fw-semibold">Connect</div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>Facebook</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>Instagram</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>Twitter</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>Affiliates</small>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-secondary">
+                <small>Out Stores</small>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Col 5 -->
+          <div class="col text-start">
+            <div class="row">
+              <div class="col">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control shadow-none"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Email address</label>
+                  <div class="text-center">
+                    <button
+                      class="btn btn-sm mt-2 border-0 text-white fw-semibold"
+                      type="submit"
+                      style="background: #fc78b1"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Popper Script  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+      integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
