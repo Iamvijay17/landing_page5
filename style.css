@@ -1,0 +1,22 @@
+   /* Font Import  */
+   @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap");
+
+ 
+
+   .carTitle {
+     font-family: "Kanit", sans-serif;
+   }
+
+   .active {
+     color: #fc78b1 !important;
+   }
+
+   /* Card hover effect */
+   .card-img-top {
+     transition: 0.5s ease-in-out;
+   }
+
+   .card-img-top:hover {
+     transform: scale(1.2);
+     cursor: pointer;
+   }
